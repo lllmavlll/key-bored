@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        tanBgColor: "var(--tanBgColor)",
       },
     },
   },
