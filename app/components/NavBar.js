@@ -9,7 +9,7 @@ const NavBar = () => {
           <h1
             className='dark:text-white font-bold text-xl'
           >
-            Key<span className='text-blue-500'>Bored!</span>
+            Key<span className='text-purple-500'>Bored!</span>
           </h1>
         </div>
         <ThemeToggle />
