@@ -53,14 +53,14 @@ const Footer = () => {
                 key={item.name}
                 href={item.href}
                 target='_blank'
-                className="light:text-gray-600 dark:text-gray-200 hover:text-purple-700 hover:scale-110 transition-all duration-300"
+                className="text-purple-950 dark:text-gray-200 hover:text-purple-700 hover:scale-110 transition-all duration-300"
               >
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </Link>
             ))}
           </div>
-          <p className="mt-8 text-sm/6 light:text-gray-600 dark:text-gray-200 md:order-1 md:mt-0">
+          <p className="mt-8 text-sm/6 text-purple-950 dark:text-gray-200 md:order-1 md:mt-0">
             &copy; 2024 KeyBored. All rights reserved.
           </p>
         </div>

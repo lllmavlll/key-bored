@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Commissioner } from 'next/font/google';
 import "./globals.css";
 
 const geistSans = localFont({
@@ -10,18 +11,26 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+}); 
+
+const commissioner = Commissioner({
+  subsets: ['latin'],
+  variable: '--font-commissioner',
 });
 
 export const metadata = {
   title: "KeyBored!",
   description: "Test your keyboard with KeyBored",
+  icons: {
+    icon: '/keyboard.svg',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${commissioner.variable} antialiased`}
       >
         {children}
       </body>

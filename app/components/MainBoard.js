@@ -5,8 +5,8 @@ import DefaultKey from './DefaultKey'
 
 const MainBoard = () => {
   return (
-    <div className="py-40 px-4 flex justify-center items-center dark:bg-gray-900 light:bg-tanBgColor">
-      <div className='px-2 pt-2 pb-4 bg-purple-900 rounded-xl flex '>
+    <div className="py-40 px-10 flex lg:justify-center items-center dark:bg-gray-900 light:bg-tanBgColor overflow-x-auto hideScrollbar">
+      <div className='px-2 pt-2 pb-4 bg-purple-900 rounded-xl flex  min-w-[1104px]'>
         <div className='bg-purple-50 rounded-l-lg pl-5 pr-0.5 pt-5 pb-10 flex flex-col gap-2 '>
           <KeyRow keys={row1} />
           <KeyRow keys={row2} />

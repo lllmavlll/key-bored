@@ -1,40 +1,6 @@
-'use client'
-import { useEffect, useState } from "react";
+import React from 'react'
 
-const DefaultKey = ({ keyCode = 'KeyA', keyName = 'A', keyWidth = '50px', keyHeight = '48px', textAlign = 'start' }) => {
-  const [keyPressed, setKeyPressed] = useState(false);
-  const [keyDown, setKeyDown] = useState(false);
-
-  useEffect(() => {
-    // Function to handle the key press event
-    const handleKeyDown = (event) => {
-      event.preventDefault();
-      if (event.code === keyCode) {
-        setKeyDown(true);
-      }
-
-    }
-
-    // Function to handle the key up event
-    const handleKeyUp = (event) => {
-      if (event.code === keyCode) {
-        event.preventDefault();
-        setKeyPressed(true);
-        setKeyDown(false);
-      }
-    }
-
-    // Adding event listener for keydown
-    window.addEventListener('keydown', handleKeyDown);
-    window.addEventListener('keyup', handleKeyUp);
-    // Cleanup function to remove event listener on component unmount
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      window.removeEventListener('keyup', handleKeyUp);
-    };
-  }, []);
-
-
+const DummyKey = ({ keyDown = false, keyPressed = false, keyName = 'A', keyWidth = '50px', keyHeight = '48px', textAlign = 'start' }) => {
   return (
     <div
       className={`
@@ -80,7 +46,7 @@ const DefaultKey = ({ keyCode = 'KeyA', keyName = 'A', keyWidth = '50px', keyHei
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DefaultKey;
+export default DummyKey
