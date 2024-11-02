@@ -5,7 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --tanBgColor: #fffcf6;
+  /* --tanBgColor: #fffcf6; */
+  --tanBgColor: #fdfaff;
 }
 
 @media (prefers-color-scheme: dark) {

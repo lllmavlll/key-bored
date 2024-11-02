@@ -1,9 +1,10 @@
 import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
+import Link from 'next/link';
 const socialLinks = [
 
   {
     name: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/lll_maverick_lll/',
     icon: (props) => (
       <IconBrandInstagram />
       // <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -23,7 +24,7 @@ const socialLinks = [
   },
   {
     name: 'GitHub',
-    href: '#',
+    href: 'https://github.com/lllmavlll',
     icon: (props) => (
       <IconBrandGithub />
       // <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -33,7 +34,7 @@ const socialLinks = [
   },
   {
     name: 'LinkedIn',
-    href: '#',
+    href: 'https://www.linkedin.com/in/mahesh-k-n-732121251',
     icon: (props) => (
       <IconBrandLinkedin />
       // <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect width="4" height="12" x="2" y="9" /><circle cx="4" cy="4" r="2" /></svg>
@@ -45,21 +46,22 @@ const Footer = () => {
   return (
     <footer className='dark:bg-gray-900 light:bg-tanBgColor '>
       <div className="mx-auto max-w-6xl px-4 pb-8 pt-20">
-        <div className="mt-10 border-t border-gray-900/10 pt-8  md:flex md:items-center md:justify-between ">
+        <div className="mt-10 border-t border-purple-900/30 pt-8  md:flex md:items-center md:justify-between ">
           <div className="flex gap-x-6 md:order-2">
             {socialLinks.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
-                className="light:text-gray-600 dark:text-gray-200 hover:text-purple-600"
+                target='_blank'
+                className="light:text-gray-600 dark:text-gray-200 hover:text-purple-700 hover:scale-110 transition-all duration-300"
               >
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
+              </Link>
             ))}
           </div>
           <p className="mt-8 text-sm/6 light:text-gray-600 dark:text-gray-200 md:order-1 md:mt-0">
-            &copy; 2024 Your Company, Inc. All rights reserved.
+            &copy; 2024 KeyBored. All rights reserved.
           </p>
         </div>
       </div>
