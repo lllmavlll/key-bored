@@ -1,5 +1,5 @@
 import React from 'react'
-import { row1, row2, row3, row4, row5, row6, row7 } from '../utils/keys'
+import { row1, row2, row3, row4, row5, row6, row7,endColums } from '../utils/keys'
 import KeyRow from './KeyRow'
 import DefaultKey from './DefaultKey'
 
@@ -7,7 +7,7 @@ const MainBoard = () => {
   return (
     <div className="py-40 px-4 flex justify-center items-center dark:bg-gray-900 light:bg-tanBgColor">
       <div className='px-2 pt-2 pb-4 bg-purple-900 rounded-xl flex '>
-        <div className='bg-purple-50 rounded-lg px-5 pt-5 pb-10 flex flex-col gap-2'>
+        <div className='bg-purple-50 rounded-l-lg pl-5 pr-0.5 pt-5 pb-10 flex flex-col gap-2 '>
           <KeyRow keys={row1} />
           <KeyRow keys={row2} />
           <KeyRow keys={row3} />
@@ -19,6 +19,11 @@ const MainBoard = () => {
               <DefaultKey key={index} keyCode={key.keyCode} keyName={key.keyName} keyWidth={key.keyWidth} textAlign={key.textAlign} />
             ))}
           </div>
+        </div>
+        <div className='bg-purple-50 rounded-r-lg pr-5 pl-0.5 pt-5 pb-10 flex flex-col gap-2 '>
+            {endColums.map((key, index) => (
+              <DefaultKey key={index} keyCode={key.keyCode} keyName={key.keyName} keyWidth={key.keyWidth} textAlign={key.textAlign} keyHeight={key.keyHeight} />
+            ))}
         </div>
       </div>
     </div>
