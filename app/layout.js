@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Signika_Negative, Dosis ,Manrope} from 'next/font/google';
 import "./globals.css";
 
 const geistSans = localFont({
@@ -11,6 +12,20 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const signika = Signika_Negative({
+  subsets: ['latin'],
+  variable: '--font-signika',
+});
+
+const dosis = Dosis({
+  subsets: ['latin'],
+  variable: '--font-dosis',
+});
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-manrope',
+});
 
 export const metadata = {
   title: "KeyBored!",
@@ -21,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${signika.variable} ${dosis.variable} ${manrope.variable} antialiased`}
       >
         {children}
       </body>

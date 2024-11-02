@@ -1,8 +1,9 @@
-import { IconBrandWindowsFilled, IconMenu2, IconChevronUp, IconChevronDown, IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
+import { IconBrandWindowsFilled, IconMenu2, IconChevronUp, IconChevronDown, IconChevronLeft, IconChevronRight, IconArrowNarrowLeft } from '@tabler/icons-react';
 
 const dummyClass = ['w-[74px]', 'w-[76px]', 'w-[72px]', 'w-[68px]', 'w-[60px]', 'w-[50px]', 'w-[42px]', 'w-[46px]', 'w-[54px]',
-  'w-[90px]', 'w-[104px]',,'w-[49px]', 'w-[117px]', 'w-[334px]', 'w-[100px]', 'w-[60px]', 'w-[50px]',
-  'h-[48px]', 'h-[104px]'
+  'w-[90px]', 'w-[104px]', , 'w-[49px]', 'w-[117px]', 'w-[334px]', 'w-[100px]', 'w-[60px]', 'w-[50px]',
+  'h-[48px]', 'h-[104px]',
+  'text-center', 'text-start', 'text-end'
 ];
 
 export const row1 = [
@@ -42,7 +43,7 @@ export const row2 = [
   { keyCode: 'Digit0', keyName: '0', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'Minus', keyName: '-', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'Equal', keyName: '=', keyWidth: '50px', textAlign: 'start' },
-  { keyCode: 'Backspace', keyName: '←', keyWidth: '76px', textAlign: 'end' },
+  { keyCode: 'Backspace', keyName: <IconArrowNarrowLeft stroke={2} className='ml-[33px]' />, keyWidth: '76px', textAlign: 'end' },
   // { keyCode: 'Backspace', keyName: '←', keyWidth: '70px', textAlign: 'start' }
   { keyCode: 'PageUp', keyName: 'PG UP', keyWidth: '50px', textAlign: 'center' },
   { keyCode: 'NumLock', keyName: 'NUM LK', keyWidth: '50px', textAlign: 'center' },
@@ -115,7 +116,7 @@ export const row6 = [
   { keyCode: 'WakeUp', keyName: 'Fn', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'MetaLeft', keyName: <IconBrandWindowsFilled />, keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'AltLeft', keyName: 'ALT', keyWidth: '60px', textAlign: 'start' },
-  { keyCode: 'Space', keyName: ' ', keyWidth: '334px', textAlign: 'start' },
+  { keyCode: 'Space', keyName: ' ', altName: 'SPACE', keyWidth: '334px', textAlign: 'start' },
   { keyCode: 'AltRight', keyName: 'ALT', keyWidth: '60px', textAlign: 'start' },
   { keyCode: 'ControlRight', keyName: 'CTRL', keyWidth: '100px', textAlign: 'end' },
   { keyCode: 'ArrowUp', keyName: <IconChevronUp />, keyWidth: '50px', textAlign: 'center' },
