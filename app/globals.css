@@ -18,7 +18,7 @@
 
 body {
   background: var(--tanBgColor);
-  font-family: 'Signika Negative', 'Dosis', 'Manrope', sans-serif;
+  font-family: 'Commissioner', 'Lexend', sans-serif;
 }
 
 .hideScrollbar {
@@ -31,4 +31,7 @@ body {
 .hideScrollbar::-webkit-scrollbar {
   display: none;
   /* For Chrome, Safari, and Opera */
+}
+.sdsd{
+  color: #fdf3fd;
 }

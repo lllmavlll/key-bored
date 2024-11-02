@@ -7,7 +7,7 @@ const Description = () => {
 
   const content = {
     welcome: {
-      title: "Welcome to KeyBored – Typing Comes to Life!",
+      title: "Welcome to KeyBored, and Press 'F' to pay respect! ",
       description: "Ever curious about the feel and flow of your own typing style? KeyBored brings every keystroke to life in a vibrant, interactive way by highlighting each key as you press it. It's more than just a visual typing test; it's a unique look into the rhythm of your typing. See if you're a smooth typist or more of a \"hunt-and-peck\" kind of person—every style is welcome here!"
     },
     features: {
@@ -15,15 +15,15 @@ const Description = () => {
       list: [
         {
           id: 1,
-          text: "Keyboard Testing: Ensure your keyboard is fully functional by seeing which keys light up. Great for catching stuck or unresponsive keys."
+          text: "Keyboard Testing - Ensure your keyboard is fully functional by seeing which keys light up. Great for catching stuck or unresponsive keys."
         },
         {
           id: 2,
-          text: "Typing Practice: Improve typing speed and accuracy as you enjoy real-time feedback on every keypress."
+          text: "Typing Practice - Improve typing speed and accuracy as you enjoy real-time feedback on every keypress."
         },
         {
           id: 3,
-          text: "Personal Style Check: Just for fun, observe the way you type—fast and rhythmic or precise and deliberate? Discover your unique typing style!"
+          text: "Personal Style Check - Just for fun, observe the way you type—fast and rhythmic or precise and deliberate? Discover your unique typing style!"
         }
       ]
     }
