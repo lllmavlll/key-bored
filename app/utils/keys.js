@@ -112,7 +112,7 @@ export const row5 = [
 
 export const row6 = [
   { keyCode: 'ControlLeft', keyName: 'CTRL', keyWidth: '100px', textAlign: 'start' },
-  { keyCode: 'WakeUp', keyName: <IconMenu2 />, keyWidth: '50px', textAlign: 'start' },
+  { keyCode: 'WakeUp', keyName: 'Fn', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'MetaLeft', keyName: <IconBrandWindowsFilled />, keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'AltLeft', keyName: 'ALT', keyWidth: '60px', textAlign: 'start' },
   { keyCode: 'Space', keyName: ' ', keyWidth: '334px', textAlign: 'start' },
