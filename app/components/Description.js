@@ -41,11 +41,11 @@ const Description = () => {
         <div className='flex flex-col items-start  '>
           <div className='flex gap-8 items-center mt-4'>
             <DummyKey keyName='F' />
-            <p className="text-lg"><span className='font-bold'>Initial state</span> - The key appears in a light purple color, indicating it's ready to be pressed. This is how all keys look before any interaction.</p>
+            <p className="text-lg"><span className='font-bold'>Initial state</span>{` - The key appears in a light purple color, indicating it's ready to be pressed. This is how all keys look before any interaction.`}</p>
           </div>
           <div className='flex gap-8 items-center mt-4'>
             <DummyKey keyName='F' keyDown={true} />
-            <p className="text-lg"><span className='font-bold'>Active press</span> - When you're actively pressing the key, it shifts slightly downward and turns green, providing visual feedback that the key is being pressed.</p>
+            <p className="text-lg"><span className='font-bold'>Active press</span>{` - When you're actively pressing the key, it shifts slightly downward and turns green, providing visual feedback that the key is being pressed.`}</p>
           </div>
           <div className='flex gap-8 items-center mt-4'>
             <DummyKey keyName='F' keyPressed={true} />
