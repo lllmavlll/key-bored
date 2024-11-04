@@ -8,7 +8,6 @@ const PressedKeyList = () => {
       <div className='flex gap-2 overflow-x-auto hideScrollbar'>
 
         {pressedKeys?.length > 0 ? pressedKeys.map((key, index) => (
-          // <DummyKey key={key?.keyName} keyName={key?.altName || key?.keyName} keyWidth='50px'/>
           <div key={index} className={`
         ${index === 0 ? 'bg-purple-300 border-purple-600' :
               index === 1 ? 'bg-purple-300/70 border-purple-600/70' :

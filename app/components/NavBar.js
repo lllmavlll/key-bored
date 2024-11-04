@@ -1,5 +1,4 @@
 import React from 'react'
-import ThemeToggle from './ThemeToggle'
 import { IconKeyboard } from '@tabler/icons-react'
 
 const NavBar = () => {
@@ -13,7 +12,6 @@ const NavBar = () => {
             Key<span className='text-purple-700'>Bored!</span><IconKeyboard />
           </h1>
         </div>
-        {/* <ThemeToggle /> */}
       </div>
     </div>
   )

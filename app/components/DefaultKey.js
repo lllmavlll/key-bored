@@ -11,7 +11,7 @@ const DefaultKey = ({
   altName
 }) => {
 
-  const { pressedKeys, setPressedKeys } = useUIcontext();
+  const { setPressedKeys } = useUIcontext();
   const [keyPressed, setKeyPressed] = useState(false);
   const [keyDown, setKeyDown] = useState(false);
   
@@ -19,7 +19,6 @@ const DefaultKey = ({
     // Function to handle the key press event
     const handleKeyDown = (event) => {
       if (event.code === keyCode) {
-        console.log(pressedKeys);
         event.preventDefault();
         setPressedKeys(prevKeys => [{ keyName, altName }, ...prevKeys]);
         setKeyDown(true);
