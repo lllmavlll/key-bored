@@ -1,21 +1,32 @@
 'use client'
 import { useEffect, useState } from "react";
+import { useUIcontext } from "../context/UIcontextAPI";
 
-const DefaultKey = ({ keyCode = 'KeyA', keyName = 'A', keyWidth = '50px', keyHeight = '48px', textAlign = 'start' }) => {
+const DefaultKey = ({
+  keyCode = 'KeyA',
+  keyName = 'A',
+  keyWidth = '50px',
+  keyHeight = '48px',
+  textAlign = 'start',
+  altName
+}) => {
+
+  const { pressedKeys, setPressedKeys } = useUIcontext();
   const [keyPressed, setKeyPressed] = useState(false);
   const [keyDown, setKeyDown] = useState(false);
-
+  
   useEffect(() => {
     // Function to handle the key press event
     const handleKeyDown = (event) => {
-      event.preventDefault();
       if (event.code === keyCode) {
+        console.log(pressedKeys);
+        event.preventDefault();
+        setPressedKeys(prevKeys => [{ keyName, altName }, ...prevKeys]);
         setKeyDown(true);
       }
-
     }
 
-    // Function to handle the key up event
+    // Function to handle the key up event 
     const handleKeyUp = (event) => {
       if (event.code === keyCode) {
         event.preventDefault();
@@ -32,7 +43,7 @@ const DefaultKey = ({ keyCode = 'KeyA', keyName = 'A', keyWidth = '50px', keyHei
       window.removeEventListener('keydown', handleKeyDown);
       window.removeEventListener('keyup', handleKeyUp);
     };
-  }, []);
+  }, [keyCode]); // Add all dependencies
 
 
   return (

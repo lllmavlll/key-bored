@@ -20,11 +20,11 @@ export const row1 = [
   { keyCode: 'F10', keyName: 'F10', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'F11', keyName: 'F11', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'F12', keyName: 'F12', keyWidth: '50px', textAlign: 'start' },
-  { keyCode: 'Home', keyName: <>HO<br /> ME</>, keyWidth: '50px', textAlign: 'start' },
+  { keyCode: 'Home', keyName: <>HO<br /> ME</>, keyWidth: '50px', textAlign: 'start', altName: 'HOME' },
   { keyCode: 'Delete', keyName: 'DEL', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'PrintScreen', keyName: 'PRT SC', keyWidth: '50px', textAlign: 'center' },
   { keyCode: 'ScrollLock', keyName: 'SCR LK', keyWidth: '50px', textAlign: 'center' },
-  { keyCode: 'Pause', keyName: <>PAU<br />SE</>, keyWidth: '50px', textAlign: 'center' },
+  { keyCode: 'Pause', keyName: <>PAU<br />SE</>, keyWidth: '50px', textAlign: 'center', altName: 'PAUSE' },
 
 ];
 
@@ -43,10 +43,10 @@ export const row2 = [
   { keyCode: 'Digit0', keyName: '0', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'Minus', keyName: '-', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'Equal', keyName: '=', keyWidth: '50px', textAlign: 'start' },
-  { keyCode: 'Backspace', keyName: <IconArrowNarrowLeft stroke={2} className='ml-[33px]' />, keyWidth: '76px', textAlign: 'end' },
+  { keyCode: 'Backspace', keyName: <IconArrowNarrowLeft stroke={2} className='ml-[33px]' />, altName: 'BACKSPACE', keyWidth: '76px', textAlign: 'end' },
   // { keyCode: 'Backspace', keyName: '←', keyWidth: '70px', textAlign: 'start' }
-  { keyCode: 'PageUp', keyName: 'PG UP', keyWidth: '50px', textAlign: 'center' },
-  { keyCode: 'NumLock', keyName: 'NUM LK', keyWidth: '50px', textAlign: 'center' },
+  { keyCode: 'PageUp', keyName: 'PG UP', keyWidth: '50px', textAlign: 'center', altName: 'PAGE UP' },
+  { keyCode: 'NumLock', keyName: 'NUM LK', keyWidth: '50px', textAlign: 'center', altName: 'NUM LOCK' },
   { keyCode: 'NumpadDivide', keyName: '/', keyWidth: '50px', textAlign: 'center' },
   { keyCode: 'NumpadMultiply', keyName: '*', keyWidth: '50px', textAlign: 'center' },
 ];
@@ -66,7 +66,7 @@ export const row3 = [
   { keyCode: 'BracketLeft', keyName: '[', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'BracketRight', keyName: ']', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'Backslash', keyName: '\\', keyWidth: '54px', textAlign: 'start' },
-  { keyCode: 'PageDown', keyName: 'PG DN', keyWidth: '50px', textAlign: 'center' },
+  { keyCode: 'PageDown', keyName: 'PG DN', altName: 'PAGE DOWN', keyWidth: '50px', textAlign: 'center' },
   { keyCode: 'Numpad7', keyName: '7', keyWidth: '50px', textAlign: 'center' },
   { keyCode: 'Numpad8', keyName: '8', keyWidth: '50px', textAlign: 'center' },
   { keyCode: 'Numpad9', keyName: '9', keyWidth: '50px', textAlign: 'center' },
@@ -133,6 +133,6 @@ export const endColums = [
   { keyCode: 'End', keyName: 'END', keyWidth: '50px', textAlign: 'start' },
   { keyCode: 'NumpadSubtract', keyName: '-', keyWidth: '50px', textAlign: 'center', },
   { keyCode: 'NumpadAdd', keyName: '+', keyWidth: '50px', textAlign: 'center', keyHeight: '104px' },
-  { keyCode: 'NumpadEnter', keyName: <>ENT<br />ER</>, keyWidth: '50px', textAlign: 'center', keyHeight: '104px' },
+  { keyCode: 'NumpadEnter', keyName: <>ENT<br />ER</>, altName: 'ENTER', keyWidth: '50px', textAlign: 'center', keyHeight: '104px' },
 ];
 

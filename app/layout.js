@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import { Commissioner } from 'next/font/google';
 import "./globals.css";
-
+import { AppProvider } from "./context/UIcontextAPI";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -32,7 +32,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${commissioner.variable} antialiased`}
       >
-        {children}
+        <AppProvider>
+          {children}
+        </AppProvider>
       </body>
     </html>
   );
