@@ -25,23 +25,14 @@ Check it out here: [KeyBored](https://keyboredd.vercel.app/)
    git clonehttps://github.com/lllmavlll/key-bored.git
    cd keybored
    ```
-
-   
 2. Install dependencies:
-
    ```bash
    npm install
-
    ```
-
-   
 3. Run the development server:
- 
-  ```bash
-  npm run dev
-
-  ```
-
+   ```bash
+   npm run dev
+   ```
 
 4. Open http://localhost:3000 in your browser to see the app.
 
