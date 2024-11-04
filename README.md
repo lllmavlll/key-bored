@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KeyBored!
+
+A fun and interactive keyboard testing tool that highlights keys in real-time as you press them. KeyBored provides visual feedback on the initial, active, and previously pressed states of each key, making it easy to test your keyboard's functionality.
+
+## Live Site
+Check it out here: [KeyBored](https://keyboredd.vercel.app/)
+
+## Features
+- **Real-time Key Press Feedback**: Keys respond visually to each press.
+- **Multiple States**:
+  - **Initial**: Light purple.
+  - **Active**: Turns green with downward animation.
+  - **Previously Pressed**: Dark purple to indicate past interaction.
+- **Responsive Design**: Works across various screen sizes.
+
+## Tech Stack
+- **Next.js**: For the framework and routing.
+- **Tailwind CSS**: For styling and theming (light/dark mode).
+- **JavaScript**: For interactivity and state management.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```bash
+   git clonehttps://github.com/lllmavlll/key-bored.git
+   cd keybored
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   
+2. Install dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   npm install
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   
+3. Run the development server:
+ 
+  ```bash
+  npm run dev
 
-## Learn More
+  ```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Open http://localhost:3000 in your browser to see the app.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
+The app is deployed on Vercel. Any changes pushed to the main branch automatically trigger a redeployment.
 
-## Deploy on Vercel
+## Contributing
+Feel free to fork the repository and submit pull requests for new features or bug fixes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
