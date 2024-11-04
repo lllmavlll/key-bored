@@ -1,13 +1,11 @@
 import React from 'react'
 
-const DummyKey = ({ keyDown = false, keyPressed = false, keyName = 'A', keyWidth = '50px', keyHeight = '48px', textAlign = 'start' }) => {
+const DummyKey = ({ keyDown = false, keyPressed = false, keyName }) => {
   return (
     <div
       className={`
-        relative h-[${keyHeight}] transition-all duration-75
-        w-[${keyWidth}] 
-        min-w-[${keyWidth}] 
-        max-w-[${keyWidth}] 
+        relative h-[48px] transition-all duration-75
+        w-[50px]
         ${keyDown ? 'pt-[3px]' : 'pt-0'}
       `}
     >
@@ -32,7 +30,7 @@ const DummyKey = ({ keyDown = false, keyPressed = false, keyName = 'A', keyWidth
           <p
             className={`
               text-sm font-bold w-full leading-none tracking-tight
-              text-${textAlign}
+              text-start
               ${keyDown
                 ? '!text-purple-800'
                 : keyPressed
