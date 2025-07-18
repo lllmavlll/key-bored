@@ -42,7 +42,7 @@ const Footer = () => (
           ))}
         </div>
         <p className="mt-8 text-sm/6 text-purple-950 dark:text-gray-200 md:order-1 md:mt-0">
-          &copy; 2024 KeyBored. All rights reserved.
+         Made with ❤️ and lots of kool vibes
         </p>
       </div>
     </div>
